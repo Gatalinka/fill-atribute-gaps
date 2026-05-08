@@ -29,12 +29,12 @@ Control how interpolated values are rounded:
 
 ## Common use cases
 
-- Filling elevation profiles along routes
-- Chainage / milepost values along linear features
-- Sensor readings (temperature, concentration) along transects
-- Survey data completion
-- Utility network attributes (pipe diameter, pole height)
-- Bird overflight height extraction from scanned maps
+- Any numeric attribute with partial values and NULL gaps
+- Sequential measurements where only key points were recorded
+- Elevation, distance, or height profiles along routes
+- Sensor or environmental monitoring data along transects
+- Survey and field data completion
+- Infrastructure and utility network attributes
 
 ## Installation
 
