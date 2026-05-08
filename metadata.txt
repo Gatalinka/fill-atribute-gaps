@@ -1,0 +1,25 @@
+[general]
+name=Fill Attribute Gaps
+description=Interpolate missing (NULL) attribute values between known key points using linear, nearest-neighbor, cubic spline, or step interpolation.
+about=Fill NULL gaps in any numeric attribute field. Pick your layer, choose a sort column and a target column with some values filled in and some NULL, select an interpolation method, and the plugin fills in the blanks. Existing values (including 0) are never overwritten. Supports full undo with Ctrl+Z.
+
+    Methods:
+    - Linear: straight-line interpolation between key points (default)
+    - Nearest neighbor: copy the closest known value
+    - Cubic spline: smooth curve through key points (needs scipy and 3+ keys)
+    - Step (forward fill): carry last known value forward
+
+    Common use cases: filling elevation profiles, chainage/milepost values, sensor readings, survey data completion, utility network attributes.
+version=1.0.0
+qgisMinimumVersion=3.0
+author=Maja Mihaljević
+email=maja.mihaljevic@example.com
+category=Vector
+icon=icon.svg
+tags=interpolation, attribute, fill gaps, linear, nearest, spline, step, sequential, chainage, heights, elevation, sensor, NULL
+experimental=False
+deprecated=False
+hasProcessingProvider=no
+repository=
+tracker=
+homepage=
